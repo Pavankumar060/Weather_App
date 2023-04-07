@@ -1,0 +1,92 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+
+    height: 200px;
+    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/6TIZLa1AKeBel0yVO7ReIn/1fc0e2fd9fcc6d66b3cc733aa2547e11/weather-images.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading h1{
+    font-family: 'Rubik Pixels', cursive;  
+    color: whitesmoke;
+    font-size: xx-large;
+}
+.search , .button ,.type{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    padding: 2vh;
+}
+#input{
+    width: 30vw;
+}
+p{
+    color: #F1C40F;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px;
+}
+.button button{
+    background-color: #E67E22;
+    color: antiquewhite;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 18px;
+}
+
+.overall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 5px;
+}
+.data .main-data{
+    box-shadow: 3px 4.5px 6px 2px #D5F5E3;
+    width: 25vw;
+}
+.main-data .name{
+    color: #3498DB;
+}
+.design{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main-temp ,.main-data .temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temp h1 ,.design h2{
+    color: #27AE60;
+}
+.main-temp .temp-1{
+    padding: 0;
+}
+.design{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.temp-1 ,.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.description h3{
+    color:#9B59B6 ;
+}
