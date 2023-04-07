@@ -6,8 +6,7 @@ body{
     padding: 0;
 }
 .heading{
-
-    height: 200px;
+    height: 40vh;
     background-image: url("https://images.ctfassets.net/hrltx12pl8hq/6TIZLa1AKeBel0yVO7ReIn/1fc0e2fd9fcc6d66b3cc733aa2547e11/weather-images.jpg");
     background-size: cover;
     display: flex;
@@ -37,6 +36,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     margin: 12px;
 }
 .button button{
@@ -48,14 +48,19 @@ p{
 }
 
 .overall{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,350px);
+    grid-auto-rows: 50vh;
     justify-content: center;
-    margin: 10px 5px;
 }
-.data .main-data{
-    box-shadow: 3px 4.5px 6px 2px #D5F5E3;
-    width: 25vw;
+.main-data{
+    box-shadow: 4px 4.5px 15px 5px #D5F5E3;
+    width: 350px;
+    transition: .5s;
+}
+.main-data:hover{
+    transform: scale(1.1);
+    z-index: .5;
 }
 .main-data .name{
     color: #3498DB;
@@ -66,16 +71,13 @@ p{
     align-items: center;
     justify-content: center;
 }
-.main-temp ,.main-data .temp{
+ .temp{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 .temp h1 ,.design h2{
     color: #27AE60;
-}
-.main-temp .temp-1{
-    padding: 0;
 }
 .design{
     display: flex;
@@ -86,7 +88,20 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: baseline;
 }
 .description h3{
     color:#9B59B6 ;
 }
+
+/* @media (max-width :1000px) {
+
+#input{
+    width: 65vw;
+}
+.overall{
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+} */
